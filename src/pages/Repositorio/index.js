@@ -63,7 +63,7 @@ export default function Repositorio({match}) {
 
         loadIssue();
 
-    }, [filters, filterIndex,page])
+    }, [match.params.repositorio,filters, filterIndex,page])
     
     function handlePage(action) {
         setPage(action === 'back' ? page - 1 : page + 1)
